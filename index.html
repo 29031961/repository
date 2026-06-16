@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя личная страница</title>
+    <title>Официальный сайт</title>
     <style>
+        /* Главные настройки страницы */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background: #0d1117; color: #c9d1d9; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+        
+        /* Главная карточка по центру */
         .card { background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 40px; max-width: 450px; width: 100%; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        .avatar { width: 110px; height: 110px; background: linear-gradient(45deg, #1f6feb, #238636); border-radius: 50%; margin: 0 auto 20px; display: flex; justify-content: center; align-items: center; font-size: 40px; box-shadow: 0 0 20px rgba(31, 111, 235, 0.4); }
-        h1 { color: #f0f6fc; font-size: 26px; margin-bottom: 8px; }
-        p { color: #8b949e; font-size: 15px; margin-bottom: 25px; line-height: 1.5; }
-        .links-container { display: flex; flex-direction: column; gap: 12px; }
+        
+        /* Круглый блок для первой буквы имени (вместо ракеты) */
+        .avatar-box { width: 90px; height: 90px; background: #1f6feb; color: #ffffff; border-radius: 50%; margin: 0 auto 25px; display: flex; justify-content: center; align-items: center; font-size: 32px; font-weight: bold; text-transform: uppercase; box-shadow: 0 0 15px rgba(31, 111, 235, 0.3); }
+        
+        /* Тексты */
+        h1 { color: #f0f6fc; font-size: 26px; margin-bottom: 12px; }
+        p { color: #8b949e; font-size: 15px; margin-bottom: 30px; line-height: 1.6; }
+        
+        /* Кнопки со ссылками */
+        .links-container { display: flex; flex-direction: column; gap: 14px; }
         .btn { display: block; background: #21262d; color: #58a6ff; text-decoration: none; padding: 14px; border-radius: 8px; border: 1px solid #30363d; font-weight: 600; font-size: 15px; transition: all 0.3s ease; }
         .btn:hover { background: #1f6feb; color: #ffffff; border-color: #58a6ff; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(31, 111, 235, 0.3); }
     </style>
@@ -19,13 +28,20 @@
 <body>
 
     <div class="card">
-        <div class="avatar">🚀</div>
-        <h1>Добро пожаловать!</h1>
-        <p>Привет! Это моя самая первая настоящая веб-страница, которую я успешно создал и запустил на GitHub Pages самостоятельно.</p>
+        <!-- Буква в круге. Можете заменить букву 'Я' на первую букву вашего имени -->
+        <div class="avatar-box">Я</div>
         
+        <!-- Главный заголовок сайта -->
+        <h1>Личная страница</h1>
+        
+        <!-- Основной текст о вас. Можете стереть этот и написать любой свой -->
+        <p>Добро пожаловать на мой официальный сайт. Страница успешно создана, настроена и работает на платформе GitHub Pages в постоянном режиме.</p>
+        
+        <!-- Меню с важными кнопками-ссылками -->
         <div class="links-container">
-            <a href="https://github.com" target="_blank" class="btn">Мой профиль GitHub</a>
-            <a href="#" class="btn">Второй проект (Скоро)</a>
+            <!-- Вместо знака # внутри href="" можно вставить реальную ссылку, например на соцсеть -->
+            <a href="#" target="_blank" class="btn">Связаться со мной</a>
+            <a href="#" target="_blank" class="btn">Мои проекты</a>
         </div>
     </div>
 
